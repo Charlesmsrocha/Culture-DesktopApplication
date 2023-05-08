@@ -1,7 +1,17 @@
 body {
-	background: #ffe15f;
-	color: #694921;
+	background: white;
+	color: black;
 	padding: 1em;
+}
+
+img#culture{
+	width:25%;
+	height:25%
+}
+
+img{
+	width:10%;
+	height:10%
 }
 
 textarea {
