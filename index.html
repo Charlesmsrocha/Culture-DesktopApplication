@@ -4,13 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="style.css">
     <title>Culture</title>
 </head>
 <body>
     
-    <h1>Welcome</h1>
-    <img id="culture" src="Images/Culture.jpg"/>
+    <h1>       Welcome      </h1>
+    <div div style='text-align:left'></div>
+    <img id="culture" src="Images/Culture.jpg" width="500" height="500" style="vertical-align:middle" />
+    <div id="resultDiv"></div>
+
+  <script>
+
+var mysql      = require('mysql');
+
+var connection = mysql.createConnection({
+
+  host     : 'localhost',
+
+  user     : 'root',
+
+  password : 'Pass1234',
+
+  database : 'electron_first'
+
+});
+
+ 
+
+connection.connect();
+
+
+
+$sql = "SELECT 'id','uname' FROM  'login'";
+
+ 
+
+connection.query($sql, function (error, results, fields) {
+
+  if (error) throw error;
+
+  console.log(results);
+
+  $('#resultDiv').text(result[0].uname);
+
+});
+
+ 
+
+connection.end();
+
+
+
+  </script>
+
+<form action="action_page.php" method="post">
+
+  
+
+  </div>
+
+
+
+  <div class="container">
+
+    <label for="uname"><b>Username</b></label>
+
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+
+
+    <label for="psw"><b>Password</b></label>
+
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+
+
+    <button type="submit">Login</button>
+
+<label>Don't Have an Account?</label><a href="sign_up.html">Sign Here</a>
+
+
+
+  </div>
+
 
     <script src="app.js"></script>
     <script src="main.js"></script>
