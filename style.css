@@ -1,12 +1,7 @@
 /* Bordered form */
-
 form {
-
   border: 3px solid #f1f1f1;
-
 }
-
-
 
 /* Full-width inputs */
 
@@ -26,7 +21,16 @@ input[type=text], input[type=password] {
 
 }
 
+img#culture{
+	width:25%;
+	height:25%;
+}
 
+#logo{
+  text-align: center;
+  font-size:25px;
+  font-style: italic;
+}
 
 /* Set a style for all buttons */
 

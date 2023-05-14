@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Culture Desktop Applicaction</title>
+    <title>Culture Desktop Application</title>
 </head>
 <body>
     
-    <h1 align="center">       Welcome      </h1>
-    <div div style='text-align:left'></div>
-    <img align="center" id="culture" src="Images/Culture.jpg" width="300" height="300" />
-    <div id="resultDiv"></div>
+    <div id="logo">      
+      <img id="culture" src="Images/Culture.jpg" />
+      <h1>Culture</h1>
+      <h2>Find Yourself Somewhere Else</h2>
+    </div>
 
-  <script>
+  <!-- <script>
 
 var mysql      = require('mysql');
 
@@ -28,17 +29,11 @@ var connection = mysql.createConnection({
 
   database : 'electron_first'
 
-});
-
- 
+}); 
 
 connection.connect();
 
-
-
-$sql = "SELECT 'id','uname' FROM  'login'";
-
- 
+$sql = "SELECT 'id','uname' FROM  'login'"; 
 
 connection.query($sql, function (error, results, fields) {
 
@@ -50,21 +45,13 @@ connection.query($sql, function (error, results, fields) {
 
 });
 
- 
-
 connection.end();
 
+  </script> -->
 
-
-  </script>
-
-<form action="action_page.php" method="post">
-
-  
+<form action="action_page.php" method="post">  
 
   </div>
-
-
 
   <div class="container">
 
@@ -72,22 +59,16 @@ connection.end();
 
     <input type="text" placeholder="Enter Username" name="uname" required>
 
-
-
     <label for="psw"><b>Password</b></label>
 
     <input type="password" placeholder="Enter Password" name="psw" required>
 
-
-
     <button type="submit">Login</button>
 
-<label>Don't Have an Account?</label><a href="views/sign_up.html">Sign Here</a>
-
-
+<p><a href="views/sign_up.html">Sign up</a></p>
+<p><a href="views/homescreen.html">Take a quick ride!</a></p>
 
   </div>
-
 
     <script src="app.js"></script>
     <script src="main.js"></script>

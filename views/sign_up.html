@@ -1,62 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="C:\Users\jairp\OneDrive\Documentos\GitHub\Culture-DesktopApplication\signup.css">
-    <title>Culture Desktop Applicaction</title>
-</head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../style.css">
+      <title>Culture Desktop Application</title>
+    </head>
   </head>
-    <form action="action_page.php" style="border:1px solid #ccc">
-
-        <div class="container">
-
-          <h1 align="center">Sign Up</h1>
-          <hr>
-          <label for="email"><b>Email</b></label>
-
-          <input type="text" placeholder="Enter Email" name="email" required>
-
-      
-
-          <label for="psw"><b>Password</b></label>
-
-          <input type="password" placeholder="Enter Password" name="psw" required>
-
-      
-
-          <label for="psw-repeat"><b>Confirm Password</b></label>
-
-          <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
-
-      
-
-          <label>
-
-            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-
-          </label>
-
-      
-
-        
-
-      
-
-          <div class="clearfix">
-
-            <button type="button" class="cancelbtn">Cancel</button>
-
-            <button type="submit" class="signupbtn">Sign Up</button>
-
-          </div>
-
-        </div>
-
-      </form>
-
-
+  <body>
+    <form action="action_page.php">
     
+      <div class="container">
+        <div id="logo">
+          <img id="culture" src="../Images/Culture.jpg" />
+          <h1>Sign Up</h1>
+        <!-- </div>
+        <hr />
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required />
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required />
+        <label for="psw-repeat"><b>Confirm Password</b></label>
+        <input
+          type="password"
+          placeholder="Confirm Password"
+          name="psw-repeat"
+          required
+        />
+        <label>
+          <input
+            type="checkbox"
+            checked="checked"
+            name="remember"
+            style="margin-bottom: 15px"
+          />
+          Remember me
+        </label>
+        <div class="clearfix">
+          <button type="submit" class="signupbtn">Sign Up</button>
+        </div>
+      </div>
+    </form> -->
+    <form action="action_page.php" method="post">
+    </div>
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <label for="psw"><b>Confirm password</b></label>
+      <input type="password" placeholder="Confirm password" name="psw" required>
+
+      <button type="submit">Login</button>
+    <p>
+      <label>Already has an account?</label>
+    </p>
+    <p>
+      <a href="../index.html">Cancel</a>
+    </p>
+  </body>
 </html>
