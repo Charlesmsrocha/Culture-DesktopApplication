@@ -4,10 +4,13 @@
   "description": "Cross Platform Development - Integrated Application Development - Desktop application",
   "main": "main.js",
   "scripts": {
-    "start":"electron main.js",
+    "start": "electron main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^7.1.1"
+  }
 }
