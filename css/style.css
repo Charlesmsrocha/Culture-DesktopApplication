@@ -1,0 +1,83 @@
+img#culture{
+	width:25%;
+	height:25%;
+}
+
+#logo{
+  text-align: center;
+  font-size:25px;
+  font-style: italic;
+}
+
+/* Add a hover effect for buttons */
+button:hover, #login:hover {
+  opacity: 0.7;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 10px;
+}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 5px 5px 5px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Set a style for login and sign buttons */
+button, #login {
+  background-color: #04AA6D;
+  color: white;
+  padding: 15px;
+  display: inline-block;
+  margin: 5px 5px 5px 5px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Set a style for normal pages*/
+body {
+	background: white;
+	color: black;
+	padding: 1em;
+}
+
+img#culture{
+	width:25%;
+	height:25%
+}
+
+img {
+	width:10%;
+	height:10%
+}
+
+h1{
+	font-style: italic
+}
+
+header ul{
+    list-style: none;
+    position: absolute;
+    top: -15px;
+    left: 100px;
+}
+
+header li, #signbuttons{
+	display: inline-block;
+  background-color: #dddddd;
+  padding: 5px;
+  margin: 5px;
+  transition:  0.75s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav li:hover, #signbuttons:hover{
+  background-color: #777777;    
+}

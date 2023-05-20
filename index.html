@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Culture Desktop Application</title>
 </head>
+
 <body>
     
     <div id="logo">      
@@ -15,63 +16,22 @@
       <h2>Find Yourself Somewhere Else</h2>
     </div>
 
-  <!-- <script>
-
-var mysql      = require('mysql');
-
-var connection = mysql.createConnection({
-
-  host     : 'localhost',
-
-  user     : 'root',
-
-  password : 'Pass1234',
-
-  database : 'electron_first'
-
-}); 
-
-connection.connect();
-
-$sql = "SELECT 'id','uname' FROM  'login'"; 
-
-connection.query($sql, function (error, results, fields) {
-
-  if (error) throw error;
-
-  console.log(results);
-
-  $('#resultDiv').text(result[0].uname);
-
-});
-
-connection.end();
-
-  </script> -->
-
-<form action="action_page.php" method="post">  
+<form method="post">  
 
   </div>
 
   <div class="container">
-
-    <label for="uname"><b>Username</b></label>
-
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
-    <label for="psw"><b>Password</b></label>
-
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit">Login</button>
-
-<p><a href="views/sign_up.html">Sign up</a></p>
-<p><a href="views/homescreen.html">Take a quick ride!</a></p>
+    <label for="uname"><b>Name</b></label>
+    <input type="text" id="username"placeholder="Enter your name" name="uname" required>
+    <label for="psw" ><b>Password</b></label>
+    <input type="password" id="password" placeholder="Enter Password" name="psw" required>
+    <a href="views/homescreen.html" id="login">Login</a>
+    <p><a href="views/sign_up.html">Sign up</a></p>
 
   </div>
-
-    <script src="app.js"></script>
+    
     <script src="main.js"></script>
+    <script src="index.js"></script>
 
 </body>
 </html>
